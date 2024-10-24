@@ -12,17 +12,18 @@ The Hospital Appointment Booking System is a web-based application designed to s
 - **Doctor and Department Search**: Patients can search for doctors by specialization and department.
 - **Patient Profile Management**: Patients can manage their profile details and view appointment history.
 - **Appointment History and Reports**: Patients can access a detailed history of their appointments.
+- **Online Payment Gateway**: Integrated for secure and convenient payment processing for appointments.
 
 ### User Roles:
 1. **Patients**: Can register, book, reschedule, cancel appointments, and manage profiles.
 2. **Doctors**: Can view appointments, update availability, and manage patient schedules.
-3. **Administrative Staff**: Manage appointments, doctor availability, and system settings.
+3. **Administrative Staff**: Manage appointments, doctor availability, system settings, and payment processing.
 
 ### Non-Functional Requirements:
 - **User-Friendly**: The system provides an intuitive and responsive interface using HTML, CSS, and Bootstrap.
 - **Speed**: Efficient processing to ensure quick response times for booking and cancellations.
 - **Reliability**: Available 24/7 with a focus on uptime and consistency.
-- **Security**: Data protection measures to secure confidential patient information.
+- **Security**: Data protection measures to secure confidential patient information, including secure payment gateways.
 
 ## Technology Stack
 
@@ -30,6 +31,7 @@ The Hospital Appointment Booking System is a web-based application designed to s
 - **Back-End**: Java (Spring Boot)
 - **Database**: MySQL
 - **ORM**: Hibernate (for database interaction)
+- **Payment Gateway**: Secure integration for online transactions (e.g., PayPal, Stripe)
 
 ## System Architecture
 
@@ -39,7 +41,7 @@ This system follows a **well-structured design** based on **Object-Oriented Prog
 - **Encapsulation**: Each class encapsulates its data and provides specific methods for interacting with that data, such as managing appointments, profiles, or doctor schedules.
 - **Inheritance**: Common functionalities are abstracted into base classes and inherited by specialized components (e.g., user classes for patients, doctors, and administrative staff share a base `User` class).
 - **Polymorphism**: Different user roles (patients, doctors, staff) can perform actions like viewing or managing appointments, with specific behaviors defined according to their role.
-- **Abstraction**: Core system functionalities are abstracted into services (e.g., `AppointmentService`, `UserService`), ensuring the system's logic remains clean and organized.
+- **Abstraction**: Core system functionalities are abstracted into services (e.g., `AppointmentService`, `PaymentService`, `UserService`), ensuring the system's logic remains clean and organized.
 
 The system is designed to be extendable, allowing for future enhancements without requiring significant changes to the codebase.
 
