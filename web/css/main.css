@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 6, 2024, 11:47:18 PM
+    Author     : User
+*/
+/* Main CSS file */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    padding: 100px 0;
+    background-image: url('hospital.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.services .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.services .card:hover {
+    transform: scale(1.05);
+}
